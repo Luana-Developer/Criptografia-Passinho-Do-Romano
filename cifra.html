@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+    <link rel="stylesheet" href="reset (Padrão Web).css">
+    <link rel="stylesheet" href="cifra.css">
+    <script src="cifra.js" defer></script>
+    
+</head>
+
+<body>
+    <main>
+        <u><h1>Criptografia</h1></u>
+        <section>
+            <div id="codemsg">
+                <select name="select" id="code" required>
+                    <option value="vazio" disabled selected>Escolha sua Criptografia!</option>
+                    <option value="base64">Base64</option>
+                    <option value="cesar">Cifra de César</option>
+                </select>
+                 <!--  mensagem-->
+                <div id="divmsg">
+                </div>
+                <br>
+                <textarea name="msg" id="msg" cols="40" rows="8" placeholder="Digite aqui sua mensagem..."></textarea>
+            </div>
+            <br>
+            <div>
+                <label>
+                    <input class="radio" type="radio" name="escolha" value="codificar"> Codificar!
+                </label>
+                <label>
+                    <input class="radio" type="radio" name="escolha" value="decodificar"> Decodificar!
+                </label>
+                <br>
+                <button id="btn">Codificar!</button>
+            </div>
+            <br>
+            <p>Seu código é:</p>
+             <!--  aparecer aqui-->
+            <div id="exibeMensagem">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>@Luana Maximiano</h3>
+    </footer>
+</body>
+
+</html>

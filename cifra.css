@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+ body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+ main{
+    
+    max-width: 800px;
+    max-height: 900px;
+    padding: 30px;
+    margin: 30px;
+    background-color: blue;
+    font-family: 'Times New Roman';
+ }
+ u{ 
+    background-image: black;
+    font-size: 50px;
+    margin: 20px; ;
+ }
+ #code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    font-size: medium;
+    margin-bottom: 15px;
+ }
+ #code:focus{
+    background-color: yellow;
+ }
+ #msg{
+    border: 5px ridge black;
+ }
+ 
+ .radio{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.2s all linear;
+    margin-top: 10px;
+ }
+ .radio:checked {
+    border: 6px solid yellow;
+ }
+ button{
+    margin: 20px 60px 20px;
+    padding: 12px;
+    font-size: 20px; 
+    background-color: blue;
+    box-shadow: 2px 2px 2px rgb(155, 155, 153);
+    border-radius: 10px;
+ }
+ button:hover{
+    font-size: 25px;
+    text-decoration: underline;
+    background-color: yellow;
+ }
+ #exibeMensagem{
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 100%;
+    word-wrap: break-word;
+    background-color: yellow;
+    padding: 45px;
+    margin: 15px 0 25px;
+    font-size: 25px;
+ }
+ footer{
+    justify-content: center;
+    text-align: center;
+ }
+ footer{
+    color: white;
+ }
+
+ @media (max-width: 400px) {
+    body{
+        background-repeat: no-repeat;
+    }
+   
+    main{
+        max-width: 200px;
+        max-height: auto;
+        background-color: blue;
+        font-family: 'Times New Roman';
+    }
+    u{
+         margin: 0;
+         margin-bottom: 20px;
+         font-size: 17px;
+    }
+    #code{
+        font-size: 13px;
+        padding: 5px;
+    }
+    #msg{
+        width: 200px;
+    }
+    .radio{
+       display: flex;
+       flex-direction: column;
+    }
+     button{
+       margin: 20px;
+       font-size: 18px;
+       padding: 10px;
+    }   
+     #exibeMensagem{
+       width: 100px;
+       height: 100%;
+    }
+ }
